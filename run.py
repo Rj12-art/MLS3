@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -11,7 +12,10 @@ def index():
 
 @app.route("/recipe")
 def recipe():
-    return render_template("recipe.html", page_title="Recipe")
+    data = []
+    with open("data/recipe.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("recipe.html", page_title="Recipe", recipe=data)
 
 
 @app.route("/signin")
@@ -30,5 +34,5 @@ if __name__ == "__main__":
     app.run(
         host = os.environ.get("IP", "0.0.0.0"),
         port = int(os.environ.get("PORT", "5000")),
-        debug = True)
+        debug = False)
         
