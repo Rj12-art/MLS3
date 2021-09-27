@@ -21,7 +21,7 @@ def recipe():
 @app.route("/signin", methods=["GET","POST"])
 def signin():
     if request.methods == "POST":
-        print(request.form.get())
+        print(request.form)
     return render_template("signin.html", page_title="Sign In To Your Account")      
 
 
