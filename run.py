@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -18,8 +18,10 @@ def recipe():
     return render_template("recipe.html", page_title="Recipe", recipe=data)
 
 
-@app.route("/signin")
+@app.route("/signin", methods=["GET","POST"])
 def signin():
+    if request.methods == "POST":
+        print(request.form.get())
     return render_template("signin.html", page_title="Sign In To Your Account")      
 
 
