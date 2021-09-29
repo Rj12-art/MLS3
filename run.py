@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -12,16 +12,12 @@ def index():
 
 @app.route("/recipe")
 def recipe():
-    with open("data/recipe.json", "r") as json_data:
-        data = json.load(json_data)
-    return render_template("recep.html",page_title="Recipe", recipe=data)
+    return render_template("recipe.html",page_title="Recipe")
 
 
-@app.route("/signin", methods=["GET","POST"])
+@app.route("/signin")
 def signin():
-    if request.methods == "POST":
-        print(request.form)
-    return render_template("signin.html", page_title="Sign In To Your Account")      
+    return render_template("signin.html",page_title="Sign Up TO Register")
 
 
 @app.route("/signup")

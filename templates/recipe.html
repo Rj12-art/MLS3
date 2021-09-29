@@ -1,19 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>{{ page_title }}</h1>
-
     <div class="row gx-4 gx-lg-5">
         <div class="col-md-4">
             <img src="{{url_for('static',filename ='img/cioccolate.jpg' )}}" alt="">
-            
+
         </div>
         <div class="col-md-4">
             <img src="{{url_for('static',filename ='img/cupcakes.jpg' )}}" alt="">
-            
+
         </div>
         <div class="col-md-4">
             <img src="{{url_for('static',filename ='img/strawbrry.jpg' )}}" alt="">
-            
+
         </div>
     </div>
 {% endblock %}
