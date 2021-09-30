@@ -9,20 +9,21 @@
     padding: 8px;
 }
 .flex-container{
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .view-button{
+    float: right;
     text-decoration: none;
     text-align: center;
     width: 120px;
     padding: 10px 0;
     background-color: #404041;
     color: whitesmoke;
-    font-size: 1.4rem;
-    margin-top: 16px;
+    font-size: 1rem;
+    margin-top: 10px;
     align-self: flex-start;
+    border-radius: 6px;
 }
 .item-data{
     display: block;
