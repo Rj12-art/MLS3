@@ -12,7 +12,10 @@ def index():
 
 @app.route("/recipe")
 def recipe():
-    return render_template("recipe.html",page_title="Recipe")
+    data = []
+    with open("data/recipe.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("recipe.html",page_title="Recipe",recipe=data)
 
 
 @app.route("/signin")
