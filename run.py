@@ -2,6 +2,7 @@ import os
 import json
 from flask import Flask, render_template
 
+os.environ.setdefault("SECRET_KEY", "secret_flash_key")
 app = Flask(__name__)
 
 
