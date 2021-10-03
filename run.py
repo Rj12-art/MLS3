@@ -19,6 +19,15 @@ def recipe():
     return render_template("recipe.html",page_title="Recipe",recipe=data)
 
 
+@app.route("/pasta")
+def pasta():
+    render_template("pasta.html",page_title="Pasta for the Day?")
+
+
+@app.route("/beef")
+def beef():
+    render_template("beef.html",page_title="Beef for the Day?")    
+
 @app.route("/signin")
 def signin():
     return render_template("signin.html",page_title="Sign Up TO Register")
