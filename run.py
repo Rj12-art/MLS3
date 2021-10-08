@@ -16,12 +16,14 @@ def recipe():
     data = []
     with open("data/recipe.json", "r") as json_data:
         data = json.load(json_data)
-    return render_template("recipe.html",page_title="Recipe",recipe=data)
+    return render_template("recipe.html",page_title="Dessert",recipe=data)
 
 
 @app.route("/pasta")
 def pasta():
-    render_template("pasta.html",page_title="Pasta for the Day?")
+    with open("data/recipe.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("pasta.html",page_title="Pasta",recipe=data)
 
 
 @app.route("/beef")

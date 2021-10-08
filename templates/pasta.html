@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>{{ page_title }}</h1>
-    {% for item in recipe %}
+    {% for item in recipe['pasta'] %}
         <div class="row featurette">
             <div class="col-md-7">
                 <h3>{{ item.name }}</h3>
