@@ -43,6 +43,10 @@ def signup():
     return render_template("signup.html",page_title="Sign Up TO Register")
 
 
+@app.route("/createrecipe")
+def createrecipe():
+    return render_template("createrecipe.html",page_title="Sign Up TO Register")
+
 
 
 if __name__ == "__main__":
