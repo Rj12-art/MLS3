@@ -11008,6 +11008,7 @@ blockquote {
 
 .btn {
   letter-spacing: 0.0625em;
+  border-radius: 8px;
 }
 
 .form-floating input,
