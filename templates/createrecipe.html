@@ -3,38 +3,42 @@
 <h3>
     Create Recipe
 </h3>
-<label for="recipe">Recipe Category:</label>
-
-<select name="recipe" id="recipe">
-  <option value="beef">Beef</option>
-  <option value="pasta">Pasta</option>
-  <option value="dessert">Dessert</option>
-</select> 
-
-<form>
-    <fieldset>
-      <legend>Ingredients:</legend>
-      <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Text Area">
-        Ingredient 1
-        Ingredient 2
-      </textarea>
-    </fieldset>
-  </form> 
-
-  <form>
-    <fieldset>
-      <legend>Preparation Steps:</legend>
-      <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Text Area">
-      </textarea>
-    </fieldset>
-  </form> 
-
-  <form>
-    <fieldset>
-      <legend>Required Tools:</legend>
-      <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Text Area">
-      </textarea>
-    </fieldset>
-  </form> 
-
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <label for="recipe">Recipe Category:</label>
+  
+      <select name="recipe" id="recipe">
+        <option value="beef">Beef</option>
+        <option value="pasta">Pasta</option>
+        <option value="dessert">Dessert</option>
+      </select>
+  
+      <form>
+        <fieldset>
+          <legend>Ingredients:</legend>
+          <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Text Area">
+          Ingredient 1
+          Ingredient 2
+        </textarea>
+        </fieldset>
+      </form>
+  
+      <form>
+        <fieldset>
+          <legend>Preparation Steps:</legend>
+          <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Text Area">
+        </textarea>
+        </fieldset>
+      </form>
+  
+      <form>
+        <fieldset>
+          <legend>Required Tools:</legend>
+          <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Text Area">
+        </textarea>
+        </fieldset>
+      </form>
+  
+    </div>
+  </div>
 {% endblock %}

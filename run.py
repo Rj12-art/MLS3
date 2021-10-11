@@ -31,7 +31,8 @@ def beef():
     data = []
     with open("data/recipe.json", "r") as json_data:
         data = json.load(json_data)
-    return render_template("beef.html", page_title= "Beef",recipe=data)    
+    return render_template("beef.html", page_title= "Beef",recipe=data) 
+       
 
 @app.route("/signin")
 def signin():
