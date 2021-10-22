@@ -674,7 +674,6 @@ progress {
 }
 .row > * {
   flex-shrink: 0;
-  width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
@@ -2971,7 +2970,6 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 1rem 1.75rem;
-  font-size: 0.875rem;
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
